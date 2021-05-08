@@ -6,7 +6,9 @@ import pandas as pd
 email_addr = os.environ.get('airful_email_addr')
 email_pass = os.environ.get('airful_email_pass')
 
-df = pd.read_csv(r'\mnt\c\users\Clive\Desktop\new_devs_india.csv')
+print(email_addr, email_pass)
+
+df = pd.read_csv(r'/mnt/c/users/Clive/Desktop/test.csv')
 contacts = df['email'].tolist()
 v = ', '.join(contacts)
 print(v)
